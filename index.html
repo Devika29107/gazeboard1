@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GazeBoard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.min.js"></script>
+
+</head>
+<body>
+  <h1>👁️ GazeBoard</h1>
+   <p>This is where the eye-controlled board will load. Use your gaze to select a phrase and let the system speak for you.</p>
+  <div id="grid">
+    <div class="icon" data-phrase="I'm hungry">🍽<p>I'm hungry</p></div>
+    <div class="icon" data-phrase="I need to use the bathroom">🚽<p>Bathroom</p></div>
+    <div class="icon" data-phrase="I'm sad">😢<p>I'm sad</p></div>
+    <div id="sos-alert" style="display: none;">🚨 HELP CALLED 🚨</div>
+
+    <div class="icon" data-phrase="I want to sleep">🛌<p>Sleep</p></div>
+    <div class="icon" data-phrase="Help me!">🆘<p>Help</p></div>
+    <div class="icon" data-phrase="Play music">🎵<p>Music</p></div>
+  </div>
+
+  <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
